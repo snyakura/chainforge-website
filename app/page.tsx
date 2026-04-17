@@ -1,21 +1,25 @@
 import { HeroSection } from "@/components/home/hero-section"
-import { MarketTicker } from "@/components/home/market-ticker"
-import { FeaturedCourses } from "@/components/home/featured-courses"
-import { Testimonials } from "@/components/home/testimonials"
-import { Announcements } from "@/components/home/announcements"
-import { PaymentMethods } from "@/components/home/payment-methods"
-import { Footer } from "@/components/footer"
+import { StatsSection } from "@/components/home/stats-section"
+import { MarketsSection } from "@/components/home/markets-section"
+import { CoursesSection } from "@/components/home/courses-section"
+import { MentorsSection } from "@/components/home/mentors-section"
+import { TestimonialsSection } from "@/components/home/testimonials-section"
+import { PricingSection } from "@/components/home/pricing-section"
+import { FAQSection } from "@/components/home/faq-section"
+import { CTASection } from "@/components/home/cta-section"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen">
+    <>
       <HeroSection />
-      <MarketTicker />
-      <FeaturedCourses />
-      <Testimonials />
-      <Announcements />
-      <PaymentMethods />
-      <Footer />
-    </div>
+      <StatsSection />
+      <MarketsSection />
+      <CoursesSection />
+      <MentorsSection />
+      <TestimonialsSection />
+      <PricingSection />
+      <FAQSection />
+      <CTASection />
+    </>
   )
 }
